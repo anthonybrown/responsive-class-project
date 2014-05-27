@@ -1,0 +1,121 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>jQuery Mobile first look</title>
+    <meta name="description" content="HTML5, CSS3, Javascript, PHP">
+    <meta name="author" content="a site that demonstrates standards compliant code">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+   <!-- Mobile viewport optimization h5bp.com/ad -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+	<link href='http://fonts.googleapis.com/css?family=Fascinate+Inline|Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+	
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/libs/selectivizr-min.js"></script>
+	<![endif]-->
+	
+
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+	<!-- For iPhone 4 -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+	<!-- For Nokia -->
+	<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<!--iOS. Delete if not required -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-startup-image" href="img/splash.png">
+
+	<!--Microsoft. Delete if not required -->
+	<meta http-equiv="cleartype" content="on">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+	<!-- http://t.co/y1jPVnT -->
+	<link rel="canonical" href="/">
+</head>
+
+<body>
+<div id='glow'>
+  <div id="wrapper">
+    <header>
+	<h1>Mobile Class</h1>
+	<h2>Geo Tweet Application.</h2>
+		<nav>
+			<ul>
+				<li class='button'><a href="index.html">home</a></li>
+				<li class='button'><a href="geo.html">geo</a></li>
+				<li class='button'><a href="#">work</a></li>
+				<li class='button'><a href="#">contact</a></li>
+			</ul>
+		</nav>
+    </header>
+    <div id="main" role="main">
+		<div id='minion'><img src='img/minion.png' alt='' /></div>
+		<h1>Geo Tweet</h1>
+		<h2>My first app with sencha touch !</h2>
+		<p>
+			Welcome to the mobile site for my mobile class at NEiA, I will be testing out<span class='big'>&nbsp;Sencha Touch</span>
+			to build a geo tweet application with the Google map api. I am also using media queries and jQuery to help
+		</p>
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+<div><!-- end glow -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+ 
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
